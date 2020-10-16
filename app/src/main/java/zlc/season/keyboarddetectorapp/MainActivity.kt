@@ -7,7 +7,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.view.ViewGroup
 import kotlinx.android.synthetic.main.activity_main.*
 import zlc.season.keyboarddetector.KeyBoardDetector
-import zlc.season.tango.click
 
 class MainActivity : AppCompatActivity() {
 
@@ -24,7 +23,7 @@ class MainActivity : AppCompatActivity() {
             edit.layoutParams = layoutParams
         })
 
-        next.click {
+        next.setOnClickListener {
             startActivity(Intent(this, TestActivity::class.java))
         }
     }
